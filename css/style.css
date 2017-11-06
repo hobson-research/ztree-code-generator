@@ -1,0 +1,597 @@
+/*--------------------------------------------------------------------------
+   
+	ZTree Code Generator
+	http://apps.lastplane.com/ztree/
+	
+	1. Body
+	2. Typography
+	3. Header
+	4. Indivual Pages
+		4.1. What We Do
+		4.2. Works
+		4.3 Audio
+		4.4 About Us (Team)
+		4.5. Twitter
+	5. Sidebar
+	6. Footer
+	7. Images
+	8. Forms
+
+--------------------------------------------------------------------------*/
+
+/*--------------------------------------------------------------------------
+	1. Body
+--------------------------------------------------------------------------*/
+
+body {
+	font: 14px/22px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #333;
+	-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+	-webkit-text-size-adjust: 100%;
+}
+
+
+/*	Blockquotes  */
+blockquote, blockquote p { font-size: 17px; line-height: 24px; color: #777; font-style: italic; }
+blockquote { margin: 0 0 20px; padding: 9px 20px 0 19px; border-left: 1px solid #ddd; }
+blockquote cite { display: block; font-size: 12px; color: #555; }
+blockquote cite:before { content: "\2014 \0020"; }
+blockquote cite a, blockquote cite a:visited, blockquote cite a:visited { color: #555; }
+
+hr { border: solid #eee; border-width: 1px 0 0; clear: both; margin: 10px 0 30px; height: 0; }
+	
+
+/*--------------------------------------------------------------------------
+	2. Typography
+--------------------------------------------------------------------------*/
+
+h1, .h1 { font-size: 17px; line-height: 20px; font-weight: bold; }
+h2, .h2 {
+	font: normal 700 44px/45px "proxima-nova", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-transform: uppercase;
+	margin-bottom: 50px;
+}
+h3, .h3 { font-size: 14px; line-height: 22px; font-weight: bold; }
+h4, .h4 {
+	color: #ddd;
+	font: normal 12px/19px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin-bottom: 10px;
+}
+
+/* Links */
+a, a:visited { color: #9cbf1c; text-decoration: none; outline: 0; }
+a:hover, a:focus { color: #7c9f00; }
+p a, p a:visited { line-height: inherit; }
+
+.underline {
+	text-decoration: underline;
+}
+
+
+.font-white { color: #fff!important; }
+.font-green { color: #9cbf1c; }
+
+
+a[href$='.pdf'] {
+	font: normal 12px/19px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+
+a[href$='.xlsx'], a[href$='.xls'], a[href$='.csv'], a[href$='.xlt'], a[href$='.xlw'] {
+    display: block;
+    font-size: 12px;
+    line-height: 19px;
+    padding: 20px 0 20px 60px;
+    background: #222 url('../images/icons/icon_excel.png') 20px center no-repeat;
+    
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-khtml-border-radius: 4px;
+	border-radius: 4px;
+}
+
+
+	a[href$='.xlsx']:hover, a[href$='.xls']:hover, a[href$='.csv']:hover, a[href$='.xlt']:hover, a[href$='.xlw']:hover {
+		color: #fff;
+	    background-color: #9cbf1c;
+}
+
+
+
+/*--------------------------------------------------------------------------
+	3. Header
+--------------------------------------------------------------------------*/
+
+/* Topbar (fixed) */
+
+#topbar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 10000;
+	overflow: visible;
+}
+
+#topbar a {
+  color: #555;
+}
+
+#topbar-inner {
+}
+
+#topbar div > ul, .nav {
+  display: block;
+  float: right;
+  position: relative;
+  margin: 0;
+}
+
+#topbar div > ul > li, .nav > li {
+  display: block;
+  float: left;
+}
+
+#topbar div > ul a, .nav a {
+  display: block;
+  background: #fff;
+  float: none;
+  border-top: 3px solid #555;
+  padding: 8px 14px;
+  font: normal 700 14px/23px "proxima-nova", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+#topbar div > ul a:hover, .nav a:hover {
+	background: #fff;
+	color: #9cbf1c;
+	border-top: 3px solid #9cbf1c;
+	text-decoration: none;
+}
+
+
+
+
+/*--------------------------------------------------------------------------
+	4. Individual Pages
+--------------------------------------------------------------------------*/
+
+	.margin-bottom-20 { margin-bottom: 20px; }
+	.margin-bottom-30 { margin-bottom: 30px; }
+	.margin-bottom-40 { margin-bottom: 40px; }
+	.margin-bottom-50 { margin-bottom: 50px; }
+
+	/*---------------------------------------------------
+		4.1 Header
+	---------------------------------------------------*/
+	
+	#section-header {
+		padding: 40px;
+		border-bottom: 1px solid #f7f7f7;
+	}
+
+	/* Site Title/Logo */
+	#section-header h1 { 
+		font: normal 100 20px/30px "proxima-nova", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+	}
+
+		#section-header h1 a {
+			color: #555;
+			display: block;
+		}
+
+
+	/*---------------------------------------------------
+		4.2 View
+	---------------------------------------------------*/
+	
+	#section-functions {
+		color: #777;
+		background: #fff;
+		padding: 50px;
+	}
+	
+		#section-functions p.desc {
+			color: #333;
+			font: normal 18px/28px "ff-meta-serif-web-pro", Georgia, serif;
+		}
+	
+		#section-functions .box-info {
+			color: #888;
+			border: 1px solid #eee;
+			font: normal 20px/30px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+			padding: 17px 25px;
+		}
+	
+		table#questions {
+			font: normal 14px/23px "proxima-nova", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+			margin-top: 30px;
+			width: 100%;
+		}
+			
+			table#questions td {
+				padding: 8px;
+			}
+			
+			table#questions thead {
+				color: #fff;
+				background: #9cbf1c;
+				font-size: 13px;
+				line-height: 23px;
+				font-weight: bold;
+				text-transform: uppercase;
+				border-bottom: 3px solid #7c9f00;
+			}
+			
+				table#questions thead td {
+					border-right: 1px solid #8caf0c;
+				}
+				
+			table#questions tbody {
+				color: #666;
+				background: #fff;
+			}
+			
+				table#questions tbody tr.even {
+					background: #f3f3f3;
+					border-top: 1px solid #e4e4e4;
+					border-bottom: 1px solid #e4e4e4;
+				}
+				
+				table#questions tbody tr.even td {
+					border-right: 1px solid #fff;
+				}
+				
+				table#questions tbody tr.odd td {
+					border-right: 1px solid #f3f3f3;
+				}
+				
+				table#questions td.question {
+					color: #333;
+					font: normal 14px/23px "ff-meta-serif-web-pro", Georgia, serif;
+					border-top: 1px solid #9cbf1c!important;
+				}
+				
+				table#questions td.match {
+					color: #9cbf1c;
+					background: #333;
+				}
+				
+				table#questions td.error {
+					color: #fff;
+					background: #f31;
+				}
+				
+				table#questions tr.odd td.match {
+					color: #7c9f00;
+					background: #111;
+				}
+
+
+
+
+	/*---------------------------------------------------
+		4.3 Stats
+	---------------------------------------------------*/
+	
+	#section-stats {
+		color: #777;
+		background: #f3f3f3;
+		border-top: 1px solid #ddd;
+		padding: 50px;
+	}
+		
+		#section-stats h3 {
+			color: #333;
+			font: normal 100 24px/32px "proxima-nova", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			margin-bottom: 30px;
+		}
+		
+		#section-stats .box-stats {
+			font: normal 100 24px/32px "proxima-nova", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+			background: #fff;
+			padding: 20px 25px;
+		}
+		
+			#section-stats .box-stats strong {
+				color: #9cbf1c;
+			}
+			
+			#section-stats .box-stats h4 {
+				color: #444;
+				font: normal bold 14px/24px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+				text-transform: uppercase;
+				letter-spacing: 1px;
+				padding-bottom: 7px;
+				 
+			}
+			
+			#section-stats .box-stats span.number {
+				color: #9cbf1c;
+				font-size: 120px;
+				line-height: 125px;
+				font-weight: bold;
+				display: block;
+			}
+			
+			#section-stats .box-stats span#totalError {
+				color: #ff3312;
+			}
+	
+	
+	/*---------------------------------------------------
+		4.2 Generate
+	---------------------------------------------------*/
+	
+	#section-generate {
+		color: #777;
+		background: #fff;
+		padding: 50px;
+	}
+
+
+	/*---------------------------------------------------
+		4.4 Code
+	---------------------------------------------------*/
+	
+	#section-zCode {
+		color: #777;
+		background: #fff;
+		padding: 50px;
+	}
+	
+		#section-zCode .box-zPeriod {
+		}
+		
+			#section-zCode .box-zPeriod a {
+				display: block;
+				padding: 30px 10px 24px 30px;
+				border-top: 1px solid #eee;
+			}
+			
+				#section-zCode .box-zPeriod a:hover {
+					background: #9cbf1c;
+				}
+				
+			#section-zCode .box-zPeriod span.label {
+				color: #bbb;
+				font: normal 13px/19px "ff-meta-serif-web-pro", Georgia, serif;
+				text-transform: uppercase;
+				letter-spacing: 3px;
+				position: relative;
+				bottom: 8px;
+			}
+			
+			#section-zCode .box-zPeriod span.number {
+				padding-left: 5px;
+				color: #333;
+				font: normal 26px/33px "ff-meta-serif-web-pro", Georgia, serif;
+			}
+			
+				#section-zCode .box-zPeriod a:hover span.label,
+				#section-zCode .box-zPeriod a:hover span.number {
+					color: #fff;
+				}
+		
+		#section-zCode h2 {
+			margin-bottom: 10px;
+		}
+	
+		#section-zCode div.question {
+			border-top: 1px solid #ddd;
+			padding: 40px 0;
+			position: relative;
+		}
+		
+		#section-zCode div.question.even {
+			background: #f5f5f5;
+		}
+		
+			#section-zCode div.question.even .box-ztreeInfo span.slash {
+				color: #fff;
+			}
+			
+			#section-zCode .wrap-textarea-left {
+				margin-top: 20px;
+				margin-left: 30px;
+			}
+			
+			#section-zCode .wrap-textarea-right {
+				margin-top: 20px;
+				margin-right: 30px;
+			}
+			
+			#section-zCode .wrap-textarea-left label,
+			#section-zCode .wrap-textarea-right label {
+				color: #555;
+				font: normal 11px/19px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+				text-transform: uppercase;
+				letter-spacing: 1px;
+			}
+			
+		#section-zCode textarea {
+			width: 96%;
+			font: normal 12px/20px "Courier New", sans-serif;
+			padding: 2%;
+			height: 400px;
+			margin-top: 10px;
+		}
+		
+		#section-zCode .box-ztreeInfo {
+			position: relative;
+			padding-left: 40px;
+		}
+		
+			#section-zCode .box-ztreeInfo > div {
+				position: relative;
+			}
+			
+			.box-ztreeInfo .info-ztreePeriod {
+				position: relative;
+			}
+			
+			.box-ztreeInfo .info-ztreeNumber {
+				position: relative;
+				left: 70px;
+			}
+			
+			.box-ztreeInfo span.slash {
+				color: #eee;
+				display: block;
+				font: normal 100 92px/70px "proxima-nova", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+				position: absolute;
+				top: 30px;
+				left: 30px;
+			}
+		
+		#section-zCode .box-ztreeInfo span.label,
+		#section-zCode .box-ztreeInfo span.number {
+			display: block;
+		}
+		
+			#section-zCode .box-ztreeInfo span.label {
+				color: #999;
+				font: normal 9px/18px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+				text-transform: uppercase;
+				letter-spacing: 1px;
+			}
+			
+			#section-zCode .box-ztreeInfo span.number {
+				color: #9cbf1c;
+				font: normal bold 42px/40px "proxima-nova", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+			}
+			
+		#section-zCode .box-questionInfo {
+			color: #7c9f00;
+			font: normal 15px/23px "ff-meta-serif-web-pro", Georgia, serif;
+		}
+		
+			#section-zCode .box-questionInfo > div {
+				margin-top: 7px;
+			}
+			
+			#section-zCode .box-questionInfo span.label {
+				color: #bbb;
+				display: block;
+				font: normal 8px/15px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+				text-transform: uppercase;
+				letter-spacing: 1px;
+			}
+			
+			.info-qYear,
+			.info-qSection,
+			.info-qNumber {
+				color: #7c9f00;
+				font: normal 20px/29px "ff-meta-serif-web-pro", Georgia, serif;
+				padding-left: 15px;
+				border-left: 5px solid #eee;
+			}
+			
+				#section-zCode div.question.even .info-qYear,
+				#section-zCode div.question.even .info-qSection,
+				#section-zCode div.question.even .info-qNumber {
+					color: #7c9f00;
+					font: normal 20px/29px "ff-meta-serif-web-pro", Georgia, serif;
+					padding-left: 15px;
+					border-left: 5px solid #fff;
+				}
+				
+			
+			.info-qYear span.label,
+			.info-qSection span.label,
+			.info-qNumber span.label {
+				color: #777;
+				display: block;
+				font: normal 8px/15px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+				text-transform: uppercase;
+				letter-spacing: 1px;
+			}
+			
+/*--------------------------------------------------------------------------
+	6. Footer
+--------------------------------------------------------------------------*/
+
+#footer {
+	color: #fff;
+	background: #000;
+	padding: 60px 0;
+}
+
+
+
+#footer a { color: #9cbf1c; }	
+
+
+/*--------------------------------------------------------------------------
+   8. Forms
+--------------------------------------------------------------------------*/
+
+/* HTML5 Placeholder */
+
+::-webkiet-input-placeholder {
+	color: #9cbf1c;
+}
+
+:-moz-placeholder {
+	color: #9cbf1c;
+}
+
+
+		/* Contact Form */
+		label, legend { 
+			font: normal 13px/22px "proxima-nova", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;\
+			text-transform: uppercase!important;
+			letter-spacing: 2px;
+		}
+		
+		/* Form style */
+		
+		label {
+			display: block;
+		}
+		
+		input, select { 
+			width: 140px; 
+			padding: 14px 20px; 
+			color: #333; 
+			background: #fff;
+			margin: 0 0 35px 0; 
+			border: 1px solid #ddd;
+			outline: none;
+			font: normal 35px/43px "proxima-nova", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		}
+		
+		input:focus, select:focus { 
+			color: #9cbf1c;
+			border-color: #9cbf1c;
+		}
+		
+		input.submit {
+			font: normal 20px/30px "proxima-nova", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+			text-transform: uppercase;
+			letter-spacing: 4px;
+			display: block;
+			cursor: pointer;
+			width: 200px;
+			color: #9cbf1c;
+			background: #333;
+			padding: 25px 30px;
+		}
+		
+		input.submit:hover { 
+			color: #fff;
+			background: #9cbf1c; 
+		}
+
+
+
+/* highlighting search term on search page */
+mark, .search-term { background: #9cbf1c; }
+	
